@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(230, 66, 245);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% {background-color: #88ff00;;}
+}
