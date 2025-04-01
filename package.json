@@ -1,0 +1,25 @@
+{
+  "name": "sleepscheduleapp",
+  "version": "1.0.0",
+  "description": "\"A basic schedule app with a focus on sleep wellness\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test\": \"echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evancogan/SleepScheduleApp.git"
+  },
+  "keywords": [
+    "Sleep",
+    "Schedule",
+    "App",
+    "Wellness"
+  ],
+  "author": "Evan Cogan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evancogan/SleepScheduleApp/issues"
+  },
+  "homepage": "https://github.com/evancogan/SleepScheduleApp#readme"
+}

@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleep Schedule
-Planner</title>
-    <link rel="stylesheet" href ="style.css">
+    <title>Sleep Schedule Adjuster</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sleep Schedule Planner</h1>
-        <label for="wake-up-time">Wake-up Time:</label>
-        <input type="time" id="wake-up-time">
-        <button id="calculate">Calculate Schedule</button>
-        <button id="add-row">Add Row</button>
-        <div id="schedule"></div>
+        <h1>Sleep Schedule Adjuster</h1>
+        <form id="schedule-form">
+            <label for="current-wake-up-time">Current Wake-Up Time:</label>
+            <input type="text" id="current-wake-up-time" placeholder="e.g., 8:00 AM" required>
+            <br>
+            <label for="desired-wake-up-time">Desired Wake-Up Time:</label>
+            <input type="text" id="desired-wake-up-time" placeholder="e.g., 6:00 AM" required>
+            <br>
+            <button type="button" id="calculate">Calculate Schedule</button>
+        </form>
 
-        <h2>Your Schedule</h2>
-        <table id="schedule-table">
+        <h2>Your 7-Day Schedule</h2>
+        <table id="schedule-table" border="1">
             <thead>
                 <tr>
-                    <th>Start Time</th>
-                    <th>End Time</th>
-                    <th>Activity</th>
+                    <th>Day</th>
+                    <th>Wake-Up Time</th>
+                    <th>Bedtime</th>
                 </tr>
             </thead>
             <tbody>
-                </tbody>
+                <!-- Schedule rows will be dynamically added here -->
+            </tbody>
         </table>
     </div>
     <script src="index.js"></script>
